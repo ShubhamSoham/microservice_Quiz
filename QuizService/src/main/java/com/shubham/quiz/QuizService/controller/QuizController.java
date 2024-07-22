@@ -28,6 +28,7 @@ public class QuizController {
 
     @PostMapping("/add")
     public Quiz addQuiz(@RequestBody Quiz quiz) {
+
         return quizService.addQuiz(quiz);
     }
 }
